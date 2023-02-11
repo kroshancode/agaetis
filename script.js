@@ -5,6 +5,7 @@ var Name = document.querySelector('#name');
 var error = document.querySelector('.error');
 var mail = document.querySelector('#mail');
 var tel = document.querySelector('#tel');
+var comment = document.querySelector('#comment');
 var body = document.querySelector('body');
 var hamburger = document.querySelector('#hamburger');
 var navList = document.querySelector('#navlist');
@@ -35,6 +36,11 @@ submitBtn.addEventListener('click', e => {
         error.classList.remove('active');
         body.classList.remove('active');
         popupDiv.classList.remove('active');
+        Name.value = '';
+        mail.value = '';
+        tel.value = '';
+        comment.value = '';
+
     } else {
         error.classList.add('active');
     }
